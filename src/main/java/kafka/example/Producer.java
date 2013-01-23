@@ -62,7 +62,7 @@ public class Producer {
             props.put("serializer.class", "kafka.serializer.StringEncoder");
             props.put("producer.type", "async");
             props.put("batch.size", "500");
-            props.put("compression.codec", "2");
+            props.put("compression.codec", "1");
             props.put("compression.topic", getEnvVar("KAFKA_TOPIC"));
             ProducerConfig config = new ProducerConfig(props);
             kafka.javaapi.producer.Producer<String, String> producer =
