@@ -1,0 +1,14 @@
+# editors/OS
+*.swp
+*~
+\#*
+.\#*
+*.class
+.DS_Store
+*.ipr
+*.iml
+*.iws
+.idea/
+
+# repo stuff
+target/
