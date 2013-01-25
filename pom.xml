@@ -38,11 +38,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.avro</groupId>
-            <artifactId>avro</artifactId>
-            <version>1.7.3</version>
-        </dependency>
-        <dependency>
             <groupId>kafka</groupId>
             <artifactId>kafka</artifactId>
             <version>0.7.2</version>
@@ -87,23 +82,6 @@
             this will create a jar file without the storm dependencies
             suitable for deployment to a cluster.
              -->
-            <plugin>
-              <groupId>org.apache.avro</groupId>
-              <artifactId>avro-maven-plugin</artifactId>
-              <version>1.7.3</version>
-              <executions>
-                <execution>
-                  <phase>generate-sources</phase>
-                  <goals>
-                    <goal>schema</goal>
-                  </goals>
-                  <configuration>
-                    <sourceDirectory>${project.basedir}/src/main/avro/</sourceDirectory>
-                    <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
-                  </configuration>
-                </execution>
-              </executions>
-            </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
